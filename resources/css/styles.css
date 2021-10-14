@@ -13,10 +13,23 @@ font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #FEA920;
+}
+
 /* Fonts */
 
 .arimo {
   font-family: 'Arimo', sans-serif;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
 }
 
 .cursive {
@@ -28,15 +41,18 @@ header {
   flex-wrap: wrap;
   position: fixed;
   width: 100%;
-  height: 70px;
+  height: 90px;
   z-index: 10;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: end;
+  background-color: #FFFFFF;
   /*border: 1px solid red;*/
 }
 
 #logo1 {
   min-width: 180px;
+  position: relative;
+  top: -15px;
   /*border: 1px solid green;*/
 }
 
@@ -57,11 +73,15 @@ header {
 #title {
   min-width: 610px;
   font-size: 1.5em;
+  position: relative;
+  top: -2px;
   /*border: 1px solid blue;*/
 }
 
 nav {
   min-width: 430px;
+  position: relative;
+  top: -7px;
   /*border: 1px solid orange;*/
 }
 
@@ -77,6 +97,7 @@ li {
 main {
   position: relative;
   z-index: 0;
+  top: 90px;
 }
 
 
@@ -88,6 +109,19 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  align-items: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#mission h1 {
+  width: 100%;
+  position: relative;
+  top: 200px;
+  display: block;
+  line-height: 1.4em;
+  background-color: #2E2E2E;
+  color: #FEA920;
 }
 
 
@@ -97,6 +131,15 @@ main {
   header {
     height: 100px;
     justify-content: center;
+    z-index: 10;
+  }
+
+  #logo1 {
+    position: static;
+  }
+
+  #title {
+    position: static;
   }
 
   nav {
@@ -105,6 +148,12 @@ main {
 
   li {
     margin: auto 30px;
+  }
+
+  main {
+    position: relative;
+    z-index: 0;
+    top: 100px;
   }
 }
 
@@ -120,12 +169,14 @@ main {
   header {
     height: 150px;
     justify-content: space-evenly;
+    z-index: 10;
   }
 
   nav {
     min-width: 150px;
     position: relative;
     left: 50px;
+    top: 0;
   }
 
   li {
@@ -133,6 +184,12 @@ main {
     display: block;
     text-align: right;
     font-size: 1.25em;
+  }
+
+  main {
+    position: relative;
+    z-index: 0;
+    top: 150px;
   }
 }
 
@@ -148,6 +205,7 @@ main {
   header {
     height: 200px;
     justify-content: space-evenly;
+    z-index: 10;
   }
 
   nav {
@@ -161,4 +219,14 @@ main {
     display: inline;
     font-size: 0.9em;
   }
+
+  main {
+    position: relative;
+    z-index: 0;
+    top: 200px;
+  }
+
+  #mission h1 {
+    position: relative;
+    top: 100px;
 }
