@@ -101,7 +101,7 @@ main {
 }
 
 
-/* Mission */
+/* Mission section */
 #mission {
   display: flex;
   height: 938px;
@@ -124,9 +124,48 @@ main {
   color: #FEA920;
 }
 
+/* Products section */
+
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#products h1 {
+  display: block;
+  width: 100%;
+  margin: 20px;
+  font-size: 2em;
+}
+
+.photo {
+  margin: 5px;
+  border: 1px solid blue;
+}
+
+.tall img {
+  width: 320px;
+  height: 480px;
+}
+
+.short img {
+  width: 652px;
+  height: 427px;
+}
+
+.photo figcaption {
+  font-size: 1.5em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  width: 320px;
+  padding: 5px;
+  margin: auto;
+}
 
 
 /* Media queries */
+
 @media only screen and ( max-width: 1220px ) {
   header {
     height: 100px;
@@ -229,4 +268,9 @@ main {
   #mission h1 {
     position: relative;
     top: 100px;
+  }
+
+  .short img {
+    max-width: 320px;
+    height: auto;
 }
