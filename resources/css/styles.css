@@ -146,16 +146,16 @@ main {
   border: 1px solid #654002;
 }
 
-.photo:hover {
-  opacity: 0.5;
+#products .photo:hover {
+  opacity: 0.6;
 }
 
-.tall img {
+.tall-product img {
   width: 320px;
   height: 480px;
 }
 
-.short img {
+.short-product img {
   width: 652px;
   height: 427px;
 }
@@ -167,6 +167,43 @@ main {
   width: 320px;
   padding: 5px;
   margin: auto;
+}
+
+/* About Us section */
+
+#about-us {
+  background-color: #FEA920;
+  padding-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+}
+
+#about-us h1 {
+  display: block;
+  width: 100%;
+  margin: 20px;
+  font-size: 2em;
+}
+
+#about-us .photo {
+  background-color: #FFFFFF;
+}
+
+.short-person img {
+  width: 652px;
+  height: 427px;
+}
+
+.tall-person img {
+  width: 652px;
+  height: 960px;
+}
+
+.large-person img {
+  width: 640px;
+  height: 261px;
 }
 
 
@@ -244,6 +281,10 @@ main {
   #products {
     padding-top: 150px;
   }
+
+  #about-us {
+    padding-top: 150px;
+  }
 }
 
 @media only screen and ( max-width: 600px) {
@@ -284,12 +325,16 @@ main {
     top: 100px;
   }
 
-  .short img {
+  .short-product img {
     max-width: 320px;
     height: auto;
   }
 
   #products {
+    padding-top: 200px;
+  }
+
+  #about-us {
     padding-top: 200px;
   }
 }
