@@ -1,11 +1,5 @@
-/*
-font-family: 'Arimo', sans-serif;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Miniver', cursive;
-font-family: 'Roboto', sans-serif;
-*/
-
 /* General */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,10 +10,16 @@ font-family: 'Roboto', sans-serif;
 a {
   text-decoration: none;
   color: #000;
+  line-height: 1.2em;
 }
 
 a:hover {
   color: #FEA920;
+}
+
+#email a:hover {
+  background-color: black;
+  border: 1px solid black;
 }
 
 /* Fonts */
@@ -36,6 +36,8 @@ a:hover {
   font-family: 'Miniver', cursive;
 }
 
+/* Header */
+
 header {
   display: flex;
   flex-wrap: wrap;
@@ -46,14 +48,12 @@ header {
   justify-content: space-evenly;
   align-items: end;
   background-color: #FFFFFF;
-  /*border: 1px solid red;*/
 }
 
 #logo1 {
   min-width: 180px;
   position: relative;
   top: -15px;
-  /*border: 1px solid green;*/
 }
 
 #logo1 img {
@@ -75,14 +75,12 @@ header {
   font-size: 1.5em;
   position: relative;
   top: -2px;
-  /*border: 1px solid blue;*/
 }
 
 nav {
   min-width: 430px;
   position: relative;
   top: -7px;
-  /*border: 1px solid orange;*/
 }
 
 ul {
@@ -102,7 +100,9 @@ main {
 
 
 /* Mission section */
+
 #mission {
+  padding-top: 90px;
   display: flex;
   height: 938px;
   background-image: url(../images/banner2.jpg);
@@ -202,8 +202,49 @@ main {
 }
 
 .large-person img {
-  width: 640px;
-  height: 261px;
+  width: 652px;
+  height: auto;
+}
+
+/* Contact us section */
+
+#contact-us {
+  height: 300px;
+  background-color: #808080;
+  padding-top: 40px;
+}
+
+#contact-us h1 {
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+#contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#address {
+  height: 140px;
+  border-left: 3px double #654002;
+  border-right: 3px double #654002;
+  padding: 5px;
+  background-color: #FEA920;
+  margin-top: 10px;
+}
+
+#address p {
+  text-align: left;
+  font-size: 1.2em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  padding: 3px 0;
+}
+
+#address-logo img {
+  height: 140px;
 }
 
 
@@ -238,7 +279,7 @@ main {
     top: 100px;
   }
 
-  #products {
+  #products, #mission, #about-us {
     padding-top: 100px;
   }
 }
@@ -278,12 +319,23 @@ main {
     top: 150px;
   }
 
-  #products {
+  #products, #mission, #about-us {
     padding-top: 150px;
   }
 
-  #about-us {
-    padding-top: 150px;
+  .short-person img {
+    width: 320px;
+    height: auto;
+  }
+  
+  .tall-person img {
+    width: 320px;
+    height: auto;
+  }
+  
+  .large-person img {
+    width: 320px;
+    height: auto;
   }
 }
 
@@ -330,11 +382,26 @@ main {
     height: auto;
   }
 
-  #products {
+  #products, #mission, #about-us {
     padding-top: 200px;
   }
 
-  #about-us {
-    padding-top: 200px;
+  .short-person img {
+    width: 320px;
+    height: auto;
+  }
+  
+  .tall-person img {
+    width: 320px;
+    height: auto;
+  }
+  
+  .large-person img {
+    width: 320px;
+    height: auto;
+  }
+
+  #contact-us {
+    height: 500px;
   }
 }
