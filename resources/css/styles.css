@@ -22,6 +22,10 @@ a:hover {
   border: 1px solid black;
 }
 
+h2 {
+  font-size: 1.5em;
+}
+
 /* Fonts */
 
 .arimo {
@@ -114,7 +118,7 @@ main {
   flex-wrap: wrap;
 }
 
-#mission h1 {
+#mission h2 {
   width: 100%;
   position: relative;
   top: 200px;
@@ -134,7 +138,7 @@ main {
   justify-content: center;
 }
 
-#products h1 {
+#products h2 {
   display: block;
   width: 100%;
   margin: 20px;
@@ -180,7 +184,7 @@ main {
   justify-content: center;
 }
 
-#about-us h1 {
+#about-us h2 {
   display: block;
   width: 100%;
   margin: 20px;
@@ -214,7 +218,7 @@ main {
   padding-top: 40px;
 }
 
-#contact-us h1 {
+#contact-us h2 {
   margin-bottom: 30px;
   font-size: 2em;
 }
@@ -372,7 +376,7 @@ main {
     top: 200px;
   }
 
-  #mission h1 {
+  #mission h2 {
     position: relative;
     top: 100px;
   }
