@@ -57,7 +57,7 @@ header {
 #logo1 {
   min-width: 180px;
   position: relative;
-  top: -15px;
+  top: 15px;
 }
 
 #logo1 img {
