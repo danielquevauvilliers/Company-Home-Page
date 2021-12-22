@@ -58,7 +58,6 @@ header {
   min-width: 180px;
   position: relative;
   top: 15px;
-  border: 1px solid red;
 }
 
 #logo1 img {
@@ -80,14 +79,12 @@ header {
   font-size: 1.5em;
   position: relative;
   top: -2px;
-  border: 1px solid green;
 }
 
 nav {
   min-width: 430px;
   position: relative;
   top: -7px;
-  border: 1px solid darkblue;
 }
 
 ul {
